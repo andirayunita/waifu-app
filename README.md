@@ -1,4 +1,6 @@
 # Waifu
+https://github.com/andirayunita/waifu-app/assets/75013321/e25e3db4-00d8-416e-a58b-c2168fc1ae7e
+
 ## Description
 
 Waifu App is an open source project and simple API to get list of waifu, the data was scrapped from [Waifu Wednesday tag from Jurnal Otaku](http://jurnalotaku.com/tag/waifu-wednesday/). For the tech stack, Waifu App was using Swift, SwiftUI and Vercel for serverless.
@@ -35,10 +37,6 @@ Press `Cmd + R` to build and run the app on the iOS Simulator.
 
 - [Waifu Generator](https://github.com/moepoi/WaifuGenerator) (PHP) by [Moepoi](https://github.com/moepoi)
 - [Waifu Generator](https://github.com/satyawikananda/waifu-generator) (JavaScript) by [SatyaWikananda](https://github.com/satyawikananda)
-
-## Contribution
-
-Want to make this project better? You can contribute this project, I am very open if there are contributions to this project.
 
 ---
 
