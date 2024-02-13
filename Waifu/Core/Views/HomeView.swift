@@ -24,8 +24,9 @@ struct HomeView: View {
     ]
     
     private var filteredWaifu: [Waifu] {
-        guard !searchWaifu.isEmpty else { return viewModel.waifus }
-        return viewModel.waifus.filter { $0.name.localizedCaseInsensitiveContains(searchWaifu) }
+        searchWaifu.isEmpty ? viewModel.waifus : viewModel.waifus.filter {
+            [$0.name, $0.anime].contains { $0.localizedCaseInsensitiveContains(searchWaifu) }
+        }
     }
     
     var body: some View {
