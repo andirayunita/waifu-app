@@ -11,6 +11,11 @@
 		5EE6202C2B7501EC007A21E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6202B2B7501EC007A21E8 /* ContentView.swift */; };
 		5EE6202E2B7501EE007A21E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE6202D2B7501EE007A21E8 /* Assets.xcassets */; };
 		5EE620312B7501EE007A21E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE620302B7501EE007A21E8 /* Preview Assets.xcassets */; };
+		5EE6203D2B750710007A21E8 /* Waifu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE6203C2B750710007A21E8 /* Waifu.swift */; };
+		5EE620412B750781007A21E8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE620402B750781007A21E8 /* APIService.swift */; };
+		5EE620462B7515E6007A21E8 /* WaifuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE620452B7515E6007A21E8 /* WaifuViewModel.swift */; };
+		5EE620482B751D6C007A21E8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE620472B751D6C007A21E8 /* HomeView.swift */; };
+		5EFEF6ED2B7B9D8800CB0710 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEF6EC2B7B9D8800CB0710 /* ActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		5EE6202B2B7501EC007A21E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5EE6202D2B7501EE007A21E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EE620302B7501EE007A21E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EE6203C2B750710007A21E8 /* Waifu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waifu.swift; sourceTree = "<group>"; };
+		5EE620402B750781007A21E8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		5EE620452B7515E6007A21E8 /* WaifuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuViewModel.swift; sourceTree = "<group>"; };
+		5EE620472B751D6C007A21E8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5EE620492B7524F2007A21E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5EFEF6EC2B7B9D8800CB0710 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				5EE620372B75050C007A21E8 /* App */,
-				5EE620382B750516007A21E8 /* Resources */,
+				5EE6203E2B750762007A21E8 /* Common */,
+				5EFEF6EF2B7C262400CB0710 /* Core */,
+				5EE620492B7524F2007A21E8 /* Info.plist */,
 				5EE6202F2B7501EE007A21E8 /* Preview Content */,
+				5EE620382B750516007A21E8 /* Resources */,
 			);
 			path = Waifu;
 			sourceTree = "<group>";
@@ -81,6 +95,57 @@
 				5EE6202D2B7501EE007A21E8 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5EE620392B7505DB007A21E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EE6203C2B750710007A21E8 /* Waifu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EE6203A2B7505E0007A21E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EE620452B7515E6007A21E8 /* WaifuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5EE6203B2B7505E6007A21E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EE620472B751D6C007A21E8 /* HomeView.swift */,
+				5EFEF6EC2B7B9D8800CB0710 /* ActivityView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EE6203E2B750762007A21E8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5EE6203F2B75076E007A21E8 /* Services */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5EE6203F2B75076E007A21E8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5EE620402B750781007A21E8 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5EFEF6EF2B7C262400CB0710 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5EE620392B7505DB007A21E8 /* Model */,
+				5EE6203A2B7505E0007A21E8 /* ViewModel */,
+				5EE6203B2B7505E6007A21E8 /* Views */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE620412B750781007A21E8 /* APIService.swift in Sources */,
+				5EE6203D2B750710007A21E8 /* Waifu.swift in Sources */,
 				5EE6202C2B7501EC007A21E8 /* ContentView.swift in Sources */,
+				5EE620482B751D6C007A21E8 /* HomeView.swift in Sources */,
+				5EFEF6ED2B7B9D8800CB0710 /* ActivityView.swift in Sources */,
 				5EE6202A2B7501EC007A21E8 /* WaifuApp.swift in Sources */,
+				5EE620462B7515E6007A21E8 /* WaifuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +361,8 @@
 				DEVELOPMENT_TEAM = ZWQ368LVC2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Waifu/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need to access gallery to save image";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +392,8 @@
 				DEVELOPMENT_TEAM = ZWQ368LVC2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Waifu/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app need to access gallery to save image";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
