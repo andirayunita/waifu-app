@@ -33,22 +33,11 @@ struct HomeView: View {
         NavigationStack {
             ScrollView {
                 if filteredWaifu.isEmpty {
-                    VStack(alignment: .center, spacing: 4) {
-                        Image(systemName: "magnifyingglass")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .foregroundColor(.gray)
-                            .padding()
-                        
-                        Text("No results for '\(searchWaifu)'")
-                            .font(.system(.title3, design: .rounded))
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                        
-                        Text("Check the spelling or try a new search.")
-                            .font(.system(.caption, design: .rounded))
-                            .foregroundColor(.gray)
-                    }
+                    ContentUnavailableView(
+                        "No results for '\(searchWaifu)'",
+                        systemImage: "magnifyingglass",
+                        description: Text("Check the spelling or try a new search.")
+                    )
                 } else {
                     LazyVGrid(columns: columns) {
                         ForEach(filteredWaifu) { waifu in
